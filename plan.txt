@@ -1,0 +1,20 @@
+TEXT:
+pre
+code
+mark
+details > summary
+time
+blockquote
+cite
+
+OTHER
+figure > figcaption 
+wbr
+progress
+meter 
+address
+
+MEDIA 
+audio 
+video
+? canvas ?

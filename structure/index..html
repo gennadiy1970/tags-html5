@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Structure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/structure.css">
+</head>
+<body id="up">
+    <div class="wrapper">
+        <header>
+            <h2>Семантические структурные теги</h2>
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#header">header</a></li>
+                <li class="menu__item"><a class="menu__link" href="#footer">footer</a></li>
+                <li class="menu__item"><a class="menu__link" href="#section ">section </a></li>
+                <li class="menu__item"><a class="menu__link" href="#article ">article </a></li>
+                <li class="menu__item"><a class="menu__link" href="#main ">main </a></li>
+                <li class="menu__item"><a class="menu__link" href="#aside">aside</a></li>
+                <li class="menu__item"><a class="menu__link" href="#nav">nav</a></li>
+            </ul>
+        </header>
+        <p>С точки зрения поведения в браузере эти теги являются аналогами тега <kbd>div</kbd>, но имеют отличие в семантике 
+            - т.е. в описании для поисковых программ-роботов смысла находящегося в этих тегах контента.</p>
+        <h4 id="header"><a href="#up">header</a></h4>
+        <p>Cлужит для объединения вводного или навигационного контента. Он может содержать как заголовки, так и прочие элементы: например логотип, форму поиска по сайту и так далее</p>
+        <h4 id="footer"><a href="#up">footer</a></h4>
+        <p>Нижний колонтитул для страницы сайта или секции. Обычно содержит информацию об авторе секции, информацию об авторском праве или ссылки на связанные документы.</p>
+        <h4 id="section"><a href="#up">section</a></h4>
+        <p>Автономная секция без специфических тегов. Как правило с заголовком.</p>
+        <h4 id="article"><a href="#up">article</a></h4>
+        <p>Самостоятельная часть документа, страницы, приложения или сайта, предназначенную для дальнейшего распространения или повторного использования. Может быть как записью в блоге так и целой статьей на странице сайта-журнала или сайта-газеты.</p>
+        <p>Обязательно содержит заголовок.</p>
+        <p>Может иметь вложенные <kbd>article</kbd>. Например статья в блоге и комментарии к статье.</p>
+        <p>Указывать автора можно через тег <kbd>adress</kbd>, а датуу и время публикации - через теги <kbd>time</kbd>
+        с атрибутом <kbd><i>datetime</i></kbd></p>
+        <h4 id="main"><a href="#up">main</a></h4>
+        <p>Содерит в себе основной контент документа и должен быть один на документ.</p>
+        <h4 id="aside"><a href="#up">aside</a></h4>
+        <p>Cлужит для обозначение размещения раздела документа с контентом, косвенно связанным с основным содержимым документа. Как правило размещается как боковая панель)</p>
+        <h4 id="nav"><a href="#up">nav</a></h4>
+        <p>Cлужит для обозначение ссылок навигации . На странице этих элементов может быть несколько. Например, в header обычно размещают ссылоки на основные страницы сайта, а в aside - ссылки на навигацию по рубрикам (якорные ссылки)</p>
+    </div>
+    <a href="../index.html" class="back">back</a>
+</body>
+</html>

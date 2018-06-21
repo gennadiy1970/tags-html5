@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text: Semantic</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h3>Text for code</h3>
+    <ul>
+      <li>
+        <pre>
+&lt;pre&gt;Просто неотформатированный тект - 
+"как вошло, так и отображается".
+Сохраняются все  пробелы 
+и  
+   переносы 
+          строк.
+&lt;pre&gt;
+        </pre>
+      </li>
+      <li>
+        <pre>&lt;code&gt;<code>
+  <span class="comment">/* служит для отображения кода 
+    - шрифт monospace */</span>
+  &nbsp;&nbsp;&nbsp;&nbsp;const WIDTH = 100;
+  &nbsp;&nbsp;&nbsp;&nbsp;const HEIGHT = WIDTH * 1.618;</code>
+&lt;/code&gt;
+        </pre>
+      </li>
+      <li><pre><span class="comment">/* служит для выделения фона 
+        текста цветом */</span>
+<code>&lt;mark&gt;<mark>const</mark>&lt;/mark&gt; WIDTH = 100;
+const HEIGHT = WIDTH * 1.618;
+        </code></pre>
+      </li>
+      <li><pre><span class="comment">/* раскрывающаяся инфомация 
+   о дате/времени*/</span></pre>
+        <details open>
+            <summary>Date &amp; Time</summary>
+            <time datetime="1970-01-01 00:00" title="1970-01-01 00:00">День рождения UNIX TIME</time>
+        </details>
+<pre>&lt;details open&gt;
+  &lt;summary&gt;Date &amp; Time&lt;/summary&gt;
+    &lt;time datetime="1970-01-01 00:00" 
+          title="1970-01-01 00:00"&gt;
+    День рождения UNIX TIME
+    &lt;/time&gt;
+&lt;/details&gt;</pre>
+      </li>
+      <li><pre><span class="comment">/* цитирование и упоминание автора */</span></pre>
+        More information can be found in
+     <kbd>&lt;cite&gt;</kbd>
+        <cite>David Flanagan- JavaScript. </cite>
+        <kbd>&lt;/cite&gt;</kbd>
+      </li>
+      <li>
+          <kbd>&lt;blockquote сite="#link" &gt;</kbd>
+        <blockquote cite="#">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, atque!</p>
+        </blockquote>
+        <kbd>&lt;/blockquote&gt;</kbd>
+      </li>
+      <li><h4>Все вместе</h4>
+<pre>&lt;figure&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;<span class="comment">The truth may be puzzling. It may
+    take some work to grapple with. It may 
+    be counterintuitive. It may contradict 
+    deeply held prejudices.</span>
+    &lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;
+    <span class="comment">Carl Sagan, in "</span>
+    &lt;cite&gt;
+      <span class="comment">Wonder and Skepticism</span>
+    &lt;/cite&gt;"<span class="comment">
+    , from the</span>
+    &lt;cite&gt;
+      <span class="comment">Skeptical Inquirer</span>
+    &lt;/cite&gt; 
+    <span class="comment">Volume 19, 
+    Issue 1 (January-February 1995)</span>
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+
+        <figure>
+            <blockquote>
+              <p>The truth may be puzzling. It may take 
+                  some work to grapple with. It may be 
+                  counterintuitive. It may contradict 
+                  deeply held prejudices.
+              </p>
+              <figcaption>
+                  Carl Sagan, in "<cite>Wonder and Skepticism</cite>;, from the <cite>Skeptical Inquirer</cite>  Volume 19, Issue 1 (January-February 1995)
+              </figcaption>
+          </blockquote>
+        </figure>
+      </li>
+    </ul>
+  </div>
+  <a href="../index.html" class="back">back</a>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
