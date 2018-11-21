@@ -22,3 +22,25 @@
 .menu__link:hover {
     border: 2px solid #fff;
 }
+
+
+
+.up {
+    position: fixed;
+    display: block;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: navy;
+    color: gold;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px hsla(0, 100%, 100%, 0.2);
+    right: 50px;
+  }
+  .up:hover  {
+    box-shadow: 0 0 5px 4px hsla(0, 100%, 100%, 0.5);
+  }
