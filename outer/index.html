@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Outer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><h2>Теги внедрения внешних ресурсов</h2></header>
+      <main>
+        <section>
+          <h3>iframe</h3>
+          <p>
+            Элемент <kbd>&lt;iframe&gt;</kbd> представляет собой вложенный
+            контекст просмотра внешней страницы HTML внутри текущей страницы. Вы
+            можете включить любое количество элементов &lt;iframe&gt; в
+            документ, каждый из которых встраивает другой документ внутри
+            &lt;body&gt; страницы.
+          </p>
+          <pre><code>&lt;iframe src="https://www.google.com/maps..." 
+  width="960"
+  height="450"
+  frameborder="0"
+  style="border:0"
+  allowfullscreen&gt;
+&lt;/iframe&gt;
+
+                        </code></pre>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2883.028801627249!2d36.228702037496596!3d50.00607427352225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1542812911222"
+            width="960"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            allowfullscreen
+          ></iframe>
+          <iframe src="https://www.hostinger.com/tutorials/css-cheat-sheet" frameborder="0"></iframe>
+        </section>
+        <section>
+          <h3>Object</h3>
+          <p>
+            Элемент &lt;object&gt; позволяет отобразить внешний ресурс, который
+            можно рассматривать как изображение или
+            или ресурс, который должен обрабатывать плагин.
+          </p>
+          <pre><code>
+&lt;object data="../assets/html5-cheat-sheet.pdf"
+    type="application/pdf"
+    width="960"
+    height="450"&gt;
+&lt;/object&gt;
+        </code></pre>
+          <object data="../assets/html5-cheat-sheet.pdf" type="application/pdf" width="960"
+          height="450"></object>
+        </section>
+      </main>
+    </div>
+    <!-- <script src="./js/app.js"></script> -->
+  </body>
+</html>
